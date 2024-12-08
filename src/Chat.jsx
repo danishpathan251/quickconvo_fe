@@ -194,7 +194,7 @@ const Chat = ({setMenuSection}) => {
       { icon: <ShareIcon />, name: 'Share' },
     ];
   return (
-    <Box display="flex" flexDirection="column" height="80vh">
+    <Box display="flex" flexDirection="column" height="100vh">
             {/* Hidden file input for uploading */}
             <input
         type="file"
