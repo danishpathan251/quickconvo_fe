@@ -312,7 +312,7 @@ const Chat = ({setMenuSection}) => {
       <Box sx={{backgroundColor:'#f8f9fa', }}>
       <SpeedDial
         ariaLabel="SpeedDial basic example"
-        sx={{ position: 'relative', bottom: 10, left: 25, width:30, height:40, transform:'scale(-10px)' }}
+        sx={{ position: 'relative', bottom: 10, left: 25, width:40, height:45, transform:'scale(-10px)' }}
         icon={<SpeedDialIcon />}
       >
         {actions.map((action) => (
