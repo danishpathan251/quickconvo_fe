@@ -31,7 +31,7 @@ import AttachFileIcon from '@mui/icons-material/AttachFile';
 
 const socket = io("http://localhost:4000"); // Connect to the server
 
-const Chat = () => {
+const Chat = ({setMenuSection}) => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const [anchorEl, setAnchorEl] = useState(null);
@@ -249,7 +249,7 @@ const Chat = () => {
         >
           <MenuItem onClick={() => handleMenuAction("Profile")}>Profile</MenuItem>
           <MenuItem onClick={() => handleMenuAction("Settings")}>Settings</MenuItem>
-          <MenuItem onClick={() => handleMenuAction("Logout")}>Logout</MenuItem>
+          <MenuItem onClick={() => setMenuSection('login')}>Logout</MenuItem>
         </Menu>
       </Box>
       </Box>

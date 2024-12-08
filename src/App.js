@@ -7,14 +7,14 @@ import LoginForm from './LoginForm';
 function App() {
 const[menuSection, setMenuSection] = useState('login');
 
-  const handleLogin = (e) => {
-    const code = e.target.value;
-    if(code == 8111 || code == 8112){
-        setMenuSection('chat');  
-    }else{
-      setMenuSection('login');
-    }
-  }
+  // const handleLogin = (e) => {
+  //   const code = e.target.value;
+  //   if(code == 8111 || code == 8112){
+  //       setMenuSection('chat');  
+  //   }else{
+  //     setMenuSection('login');
+  //   }
+  // }
   return (
   <>
  {menuSection == 'login' ?
@@ -22,7 +22,7 @@ const[menuSection, setMenuSection] = useState('login');
   <LoginForm setMenuSection={setMenuSection}/>
 
    : menuSection == 'chat' ?
-    <Chat />
+    <Chat setMenuSection={setMenuSection} />
 
   :
 <h1>djdsh</h1>
